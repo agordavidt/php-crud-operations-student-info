@@ -6,4 +6,5 @@ php-crud-operations-student-info/
 ├── edit.php           # Form to update existing student
 ├── delete.php         # Delete student from database
 ├── read.php           # Display all students
-└── styles.css         # CSS for styling the form
+├── functions.php   # Functions to handle database interactions (CRUD operations)
+└── messages.php    # Functions for managing feedback messages (success/error)
