@@ -3,7 +3,7 @@
 This project demonstrates how to perform CRUD (Create, Read, Update, Delete) operations in PHP using a MySQL database. It is a simple system for managing student information using a web-based form. The application allows you to:
 
 - Add new student records to the database
-- View existing student records
+- Retrieve existing student records
 - Update student information
 - Delete student records
 
