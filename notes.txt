@@ -17,4 +17,13 @@
 
 
  exit() function: Used whenever you need to end a script with no further work
-    takes maximum of 
+    takes maximum of 1 argument.
+
+// Including files in PHP
+- include 'filename.php';   -- Pulls the file here
+- indlude_once "filename.php";  -- Pull the file in here unless it 
+   has already been pulled in before
+- require "filename.php";  -- Pull in the file here and die if it is missing.
+- require_once "filename.php";  -- 
+- These can look like functions :: require_once("filename.php");
+

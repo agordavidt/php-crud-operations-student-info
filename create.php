@@ -1,3 +1,8 @@
+<?php
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +16,12 @@
 <body>
 
 <div class="container mt-5">
+    <?php
+
+    include("message.php");
+    // echo $_SESSION['message'];
+
+    ?>
     <div class="row">
         <div class="col-md-4 mx-auto">
             <div class="card">
