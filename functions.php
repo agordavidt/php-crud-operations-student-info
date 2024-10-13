@@ -1,5 +1,8 @@
 <?php 
 
+// to create a session lets start
+session_start();
+
 // import database
 
 require 'config.php';
@@ -25,13 +28,15 @@ if(isset($_POST['save_record'])){
     // check if query is true
     if($query_run)
     {
-        echo "Record successfully added";
+        $_SESSION['message'] = "Record successfully added";
         header("Location: create.php");
         exit(0);
     }
     else
     {
-
+        $_SESSION['message'] = "Record not added";
+        header("Location: create.php");
+        exit(0);
     }
 
 }

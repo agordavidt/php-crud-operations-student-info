@@ -12,7 +12,7 @@
 
 <div class="container mt-5">
     <div class="row">
-        <div class="col-md-8 mx-auto">
+        <div class="col-md-4 mx-auto">
             <div class="card">
                 <div class="card-header">
                     <h4>Add Student Record
@@ -20,7 +20,7 @@
                     </h4>
                 </div>
                 <div class="card-body">
-                    <form action="function.php" method="POST">
+                    <form action="functions.php" method="POST">
                         <div class="mb-3">
                             <label for="">First Name</label>
                             <input type="text" name="first_name" class="form-control" required >
