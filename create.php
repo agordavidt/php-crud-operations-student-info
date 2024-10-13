@@ -20,7 +20,7 @@
                     </h4>
                 </div>
                 <div class="card-body">
-                    <form action="" method="POST">
+                    <form action="function.php" method="POST">
                         <div class="mb-3">
                             <label for="">First Name</label>
                             <input type="text" name="first_name" class="form-control" required >
@@ -42,7 +42,7 @@
                             <input type="text" name="course" class="form-control" required>
                         </div>
                         <div class="mb-3">
-                            <button type="submit" name="create" class="btn btn-primary">Save Record</button>
+                            <button type="submit" name="save_record" class="btn btn-primary">Save Record</button>
                         </div>
                     </form>
                 </div>
