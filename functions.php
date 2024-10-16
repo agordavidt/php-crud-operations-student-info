@@ -11,6 +11,29 @@ require 'config.php';
 // echo 'connection is successful';
 
 
+
+// delete student record
+if(isset($_POST['delete-student']))
+{
+    $student_id = mysqli_real_escape_string($conn, $_POST['delete-student']);
+
+    $query = "DELETE FROM students WHERE student_id = '$student_id'";
+
+    $query_run = mysqli_query($conn, $query);
+
+    if($query_run)
+    {
+        $_SESSION['message'] = 'Record deleted!';
+        header("Location: index.php");
+        exit(0);
+    }
+    else{
+        $_SESSION['message'] = 'Record not deleted';
+        header("Location: index.php");
+        exit(0);
+    }
+}
+
 // update student record
 if(isset($_POST['update_record'])){
     // lets get the id from the form using the $_POST superglobals

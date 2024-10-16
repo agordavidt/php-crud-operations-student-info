@@ -70,8 +70,8 @@ require "config.php";
                                                 <a href="view.php?id=<?= $student['student_id']; ?>" class="btn btn-info btn-sm">View</a>
                                                 <a href="edit.php?id=<?= $student['student_id']; ?>" class="btn btn-success btn-sm">Edit</a>
                                                 
-                                                <form action="functions.php" method="POST">
-                                                    <a href="" class="btn btn-danger btn-sm">Delete</a>
+                                                <form action="functions.php" method="POST" class="d-inline">
+                                                    <button type="submit" name="delete-student" value="<?= $student['student_id']; ?>" class="btn btn-danger btn-sm">Delete</button>
 
                                                 </form>
                                             </td>                                           
