@@ -56,6 +56,8 @@ require "config.php";
 
                         ?>
                         <form action="functions.php" method="POST">
+                            <!-- --- put student id in the form input ----  -->
+                            <input type="hidden" name="student_id" value="<?= $student['id'];?>">
                             <div class="mb-3">
                                 <label for="">First Name</label>
                                 <input type="text" name="first_name" value="<?= $student['first_name']; ?>" class="form-control" required >

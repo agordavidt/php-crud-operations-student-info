@@ -10,6 +10,23 @@ require 'config.php';
 // quick test for connection  
 // echo 'connection is successful';
 
+
+// update student record
+if(isset($_POST['update_record'])){
+    // lets get the id from the form using the $_POST superglobals
+    $student_id = mysqli_real_escape_string($conn, $_POST['student_id']);
+    $first_name = mysqli_real_escape_string($conn, $_POST['first_name']);
+    $last_name = mysqli_real_escape_string($conn, $_POST['last_name']);
+    $email = mysqli_real_escape_string($conn, $_POST['email']);
+    $phone = mysqli_real_escape_string($conn, $_POST['phone']);
+    $course = mysqli_real_escape_string($conn, $_POST['course']);
+
+
+}
+
+
+
+
 // create student record
 // check if button is clicked or not with the isset function
 if(isset($_POST['save_record'])){
