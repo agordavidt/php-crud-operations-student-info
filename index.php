@@ -67,9 +67,13 @@ require "config.php";
                                             <td><?= $student['phone']?></td>
                                             <td><?= $student['course']?></td> 
                                             <td>
-                                                <a href="" class="btn btn-info btn-sm">View</a>
+                                                <a href="view.php?id=<?= $student['student_id']; ?>" class="btn btn-info btn-sm">View</a>
                                                 <a href="edit.php?id=<?= $student['student_id']; ?>" class="btn btn-success btn-sm">Edit</a>
-                                                <a href="" class="btn btn-danger btn-sm">Delete</a>
+                                                
+                                                <form action="functions.php" method="POST">
+                                                    <a href="" class="btn btn-danger btn-sm">Delete</a>
+
+                                                </form>
                                             </td>                                           
                                         </tr>
                             <?php
