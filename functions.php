@@ -21,7 +21,20 @@ if(isset($_POST['update_record'])){
     $phone = mysqli_real_escape_string($conn, $_POST['phone']);
     $course = mysqli_real_escape_string($conn, $_POST['course']);
 
-
+     $query = "UPDATE students SET name = '$name', email='$email', phone = '$phone', course='$course' WHERE id = '$student_id'";
+        // execute querry
+    $query_run = mysqli_query($conn, $query);
+    if($query_run)
+    {
+        $_SESSION['message'] = 'Record update successfull';
+        header("Location: index.php");
+        exit(0);
+    }
+    else{
+        $_SESSION['message'] = 'Record update failed';
+        header("Location: index.php");
+        exit(0);
+    }
 }
 
 
