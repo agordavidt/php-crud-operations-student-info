@@ -1,4 +1,7 @@
 <?php
+
+session_start();
+
 require "config.php";
 
 ?>
@@ -18,6 +21,12 @@ require "config.php";
 
 
 <div class="container mt-5">
+    <?php
+    // display the upload message
+    include "message.php";
+
+
+    ?>
     <div class="row">
         <div class="col-md-12">
             <div class="card">
@@ -48,7 +57,7 @@ require "config.php";
                             {
                                 foreach($query_run as $student)
                                 {
-                                    echo $student['last_name'];
+                                    // echo $student['last_name'];
                             ?>
                                         <tr>
                                             <td><?= $student['student_id']?></td>

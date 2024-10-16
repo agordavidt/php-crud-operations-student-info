@@ -15,18 +15,19 @@ require 'config.php';
 if(isset($_POST['update_record'])){
     // lets get the id from the form using the $_POST superglobals
     $student_id = mysqli_real_escape_string($conn, $_POST['student_id']);
+
     $first_name = mysqli_real_escape_string($conn, $_POST['first_name']);
     $last_name = mysqli_real_escape_string($conn, $_POST['last_name']);
     $email = mysqli_real_escape_string($conn, $_POST['email']);
     $phone = mysqli_real_escape_string($conn, $_POST['phone']);
     $course = mysqli_real_escape_string($conn, $_POST['course']);
 
-     $query = "UPDATE students SET name = '$name', email='$email', phone = '$phone', course='$course' WHERE id = '$student_id'";
+     $query = "UPDATE students SET first_name = '$first_name', last_name = '$last_name', email='$email', phone = '$phone', course='$course' WHERE student_id = '$student_id'";
         // execute querry
     $query_run = mysqli_query($conn, $query);
     if($query_run)
     {
-        $_SESSION['message'] = 'Record update successfull';
+        $_SESSION['message'] = 'Record successfully updated!';
         header("Location: index.php");
         exit(0);
     }
