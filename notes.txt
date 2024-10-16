@@ -10,10 +10,12 @@
 
 
  // Used functions for this project
+ connect() - 
  connect_error() - returns the error description from the last connection error.
  real_escape_string() - Escapes special characters in a string for use in SQL statement.
  query() - Performs an SQL query against a database
  mysqli_run() - 
+ num_rows() - checks and returns the number of rows/records in the database table
 
 
  exit() function: Used whenever you need to end a script with no further work
