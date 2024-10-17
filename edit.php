@@ -102,7 +102,9 @@ require "config.php";
     </div>
 </div>
 
+<?php
 
+/* 
 <!-- -- Handling the select options for edit ------  -->
  <!-- <div class="mb-3">                            
         <label for="">Course</label>
@@ -114,6 +116,20 @@ require "config.php";
             <option value="Geology" <?= $student['course'] == 'Geology' ? 'selected' : ''; ?>>Geology</option>
         </select>
     </div> -->
+
+
+                *** using ****
+                while
+
+    */
+    while($bloginfo =  $query_run->fetch_assoc())
+    {
+
+    }
+
+    ?>
+
+
 
   
 <!--- Bootstrap javascript bundle -->
