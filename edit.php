@@ -102,6 +102,19 @@ require "config.php";
     </div>
 </div>
 
+
+<!-- -- Handling the select options for edit ------  -->
+ <!-- <div class="mb-3">                            
+        <label for="">Course</label>
+        <select name="course" class="form-control" required>
+            <option value="" disabled>Choose your course</option>
+            <option value="Chemistry" <?= $student['course'] == 'Chemistry' ? 'selected' : ''; ?>>Chemistry</option>
+            <option value="Civil Engineering" <?= $student['course'] == 'Civil Engineering' ? 'selected' : ''; ?>>Civil Engineering</option>
+            <option value="Pharmacy" <?= $student['course'] == 'Pharmacy' ? 'selected' : ''; ?>>Pharmacy</option>
+            <option value="Geology" <?= $student['course'] == 'Geology' ? 'selected' : ''; ?>>Geology</option>
+        </select>
+    </div> -->
+
   
 <!--- Bootstrap javascript bundle -->
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>    
